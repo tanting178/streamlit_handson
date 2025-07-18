@@ -2,6 +2,11 @@
 import streamlit as st
 from helper_functions import llm # <--- This is the helper function that we have created 🆕
 from logics import customer_query_handler as cqh
+from helper_functions.utility import check_password  
+
+# Check if the password is correct.  
+if not check_password():  
+     st.stop()
 
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
