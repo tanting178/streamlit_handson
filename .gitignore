@@ -27,3 +27,6 @@ dist/
 
 # MacOS specific 
 .DS_Store
+
+# other files
+movies.csv
